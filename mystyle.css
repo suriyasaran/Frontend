@@ -1,0 +1,14 @@
+*{
+    background-color: Lightcyan;
+    font-family: Courier;
+}
+.myclass{
+    font-size: medium;
+    color:darkgray;
+    text-decoration: dotted;
+}
+.myclass{
+    font-size: small;
+    color:black;
+    text-decoration: solid;
+}
