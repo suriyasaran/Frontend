@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working with flex box</title>
+
+    <style>
+        body {
+            background-color: lightyellow;
+            width: 150%;
+            height: 150vh;
+            padding: 0;
+            margin: 0;
+
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        div.card {
+            width: 40rem;
+            border: 1px solid hsl(219, 81%, 38%);
+            margin: 2rem 0;
+
+            border-radius: 2rem;
+
+            box-shadow: 1px 1px 2px hsl(77, 63%, 55%);
+        }
+
+        div.image-card {
+            width: 20rem;
+            height: auto;
+        }
+  
+        div.image-card  img {
+            width: inherit;
+            height: inherit;
+            border-radius: 2rem 0 0 2rem;
+        }
+
+        div.image-card.left img {
+            border-radius: 0 2rem 2rem 0;
+        }
+        
+        .grid {
+            display: grid;
+            place-content: center;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container grid">
+            <h1>flex box container</h1>
+            <div class="flex card">
+                <div class="image-card">
+                    <img src="https://www.technocrazed.com/wp-content/uploads/2015/12/bike-wallpaper-1.jpg">
+                </div>
+                <div class="text-card">
+                    <p>A racing bike is a high-performance motorcycle designed for speed and agility on paved roads, featuring a lightweight frame and powerful engine</p>
+                </div>
+            </div>
+            <div class="flex card">
+                <div class="text-card">
+                    <p>A mountain cycle, also known as a mountain bike (MTB), is designed for off-road cycling. It features a sturdy frame, wide, knobby tires for traction on uneven terrain, and a suspension system to absorb shocks from rough trails</p>
+                </div>
+                <div class="image-card left">
+                    <img src="https://th.bing.com/th/id/OIP.qh2ylIiUq_eQYWFnBecA3gHaE8?rs=1&pid=ImgDetMain">
+                </div>
+            </div>
+            <div class="flex card">
+                <div class="image-card">
+                    <img src="https://th.bing.com/th/id/R.7a496b2b5c6a19def4fa6f39f3526898?rik=ZbsQpGOmTmhxpA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1845507.jpg&ehk=eXP1eqei3PY7Y4BlmXNPRkilDjC4ZXdG4jRtLxEdbWQ%3d&risl=&pid=ImgRaw&r=0" alt="some random image">
+                </div>
+                <div class="text-card">
+                    <p>
+                        A cruiser bike, also known as a beach cruiser, is a bicycle that typically features a classic design with a curved frame, wide handlebars, and balloon tires. These bikes are designed for casual riding and comfort, often with a relaxed, upright seating position.</p>
+                </div>
+            </div>
+            <div class="flex card">
+                <div class="text-card">
+                    <p>A racing bike, also known as a road bike, is a bicycle designed for speed and efficiency on paved roads. These bikes are characterized by their lightweight frames, drop handlebars, narrow tires, and multiple gears.</p>
+                </div>
+                <div class="image-card left">
+                    <img src="https://www.plastidip.co.uk/wp-content/uploads/2014/11/slider_1.jpg" alt="some random image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
